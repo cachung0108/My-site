@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Photo stickers" src="./assets/photo.jpg" id="photo">
   <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <HeaderComponent msg="Welcome to My Site.js App"/>
 </template>
@@ -25,5 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#photo {
+  width: 10%;
+  height: 10%;
 }
 </style>
