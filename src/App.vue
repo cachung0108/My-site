@@ -1,18 +1,21 @@
 <template>
-  <img alt="Photo stickers" src="./assets/photo.jpg" id="photo">
-  <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <SidebarComponent msg="Sidebar" id="Sidebar"/>
+  <ProfileCard/>
   <HeaderComponent msg="Welcome to My Site.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
+import SidebarComponent from './components/SidebarComponent.vue';
+import ProfileCard from './components/ProfileCard.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent,
+    ProfileCard
   }
 }
 </script>
@@ -26,11 +29,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-#photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 10px solid #3498db; 
-  object-fit: cover; 
-}
+
 </style>
