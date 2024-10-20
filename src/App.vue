@@ -1,21 +1,20 @@
 <template>
   <SidebarComponent msg="Sidebar" id="Sidebar"/>
   <ProfileCard/>
-  <HeaderComponent msg="Welcome to My Site.js App"/>
+  <AboutMe></AboutMe>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
 import SidebarComponent from './components/SidebarComponent.vue';
 import ProfileCard from './components/ProfileCard.vue';
+import AboutMe from './components/AboutMe.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    HeaderComponent,
     SidebarComponent,
-    ProfileCard
+    ProfileCard,
+    AboutMe
   }
 }
 </script>
