@@ -1,7 +1,7 @@
 <template>
-  <SidebarComponent msg="Sidebar" id="Sidebar"/>
-  <ProfileCard/>
-  <AboutMe></AboutMe>
+  <SidebarComponent msg="Sidebar" id="Sidebar" @scroll-to-section="scrollToSection"/>
+  <ProfileCard id = "home"/>
+  <AboutMe id = "aboutMe"></AboutMe>
 </template>
 
 <script>
@@ -15,6 +15,17 @@ export default {
     SidebarComponent,
     ProfileCard,
     AboutMe
+  },
+  methods: {
+    scrollToSection(sectionId) {
+      // 根據 sectionId 滾動到對應的區域
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error(`Section with id "${sectionId}" not found.`);
+      }
+    }
   }
 }
 </script>

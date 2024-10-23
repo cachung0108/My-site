@@ -1,19 +1,17 @@
 <template>
     <div class="sidebar">
-      <button @click="navigate('Home')">Home</button>
-      <button @click="navigate('About Me')">About Me</button>
-      <button @click="navigate('My Skill')">My Skill</button>
-      <button @click="navigate('Contact Me')">Contact Me</button>
+      <button @click="navigate('home')">Home</button>
+      <button @click="navigate('aboutMe')">About Me</button>
+      <button @click="navigate('mySkill')">My Skill</button>
+      <button @click="navigate('contactMe')">Contact Me</button>
     </div>
   </template>
   
   <script>
   export default {
     methods: {
-      navigate(page) {
-        console.log(`Navigating to ${page}`);
-        // 這裡可以根據需要添加實際的導航邏輯，例如使用 Vue Router
-        // this.$router.push({ name: page });
+      navigate(sectionId) {
+        this.$emit('scroll-to-section', sectionId);
       }
     }
   }
