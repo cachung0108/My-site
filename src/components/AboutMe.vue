@@ -32,5 +32,6 @@
     border: 1px solid #ddd; /* 添加邊框 */
     border-radius: 5px; /* 邊角圓滑 */
     text-align: left; /* 文字靠左對齊 */
+    font-family: 'PingFang TC', 'Microsoft JhengHei', 'Heiti TC', 'Noto Sans TC', 'DFKai-SB', 'SimSun', sans-serif;
 }
 </style>
