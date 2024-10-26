@@ -25,29 +25,34 @@
 .profileCard {
     width: 100vw;
     height: 100vh; 
+    text-align: left;
 }
 #contact{
+    position: relative;
+    left: 100px;
     display: inline-block;
     padding: 10px; /* 可選的內距，讓內容不貼邊 */
 }
 #photo {
-  margin-top: 30px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 10px solid #3498db; 
-  object-fit: cover; 
+    position: relative;
+    left: 100px;
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid #3498db; 
+    object-fit: cover; 
 }
 .clickable-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;        /* 圓角 */
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* 陰影 */
-  transition: transform 0.2s; /* 點擊時縮放效果 */
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;        /* 圓角 */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* 陰影 */
+    transition: transform 0.2s; /* 點擊時縮放效果 */
 }
 
 .clickable-image:hover {
-  transform: scale(1.05); /* 鼠標懸停效果 */
+    transform: scale(1.05); /* 鼠標懸停效果 */
 }
 .icon-container {
     display: flex;
