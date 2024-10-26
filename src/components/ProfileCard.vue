@@ -1,7 +1,7 @@
 <template>
     <div class="profileCard">
         <img alt="Photo stickers" src="../assets/images/photo.jpg" id="photo">
-        <header>
+        <div id = "contact">
             <h1>Chi-An Chung</h1>
             <p>NCHU CSIE</p>
             <div class="icon-container">
@@ -17,7 +17,7 @@
                     <img src="../assets/images/linkedin.png" alt="點擊圖片跳轉到網站" class="clickable-image">
                 </a>
             </div>
-        </header>
+        </div>
     </div>
 </template>
 
@@ -25,6 +25,10 @@
 .profileCard {
     width: 100vw;
     height: 100vh; 
+}
+#contact{
+    display: inline-block;
+    padding: 10px; /* 可選的內距，讓內容不貼邊 */
 }
 #photo {
   margin-top: 30px;

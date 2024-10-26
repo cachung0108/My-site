@@ -3,7 +3,6 @@
       <button @click="navigate('home')">Home</button>
       <button @click="navigate('aboutMe')">About Me</button>
       <button @click="navigate('mySkill')">My Skill</button>
-      <button @click="navigate('contactMe')">Contact Me</button>
     </div>
   </template>
   
