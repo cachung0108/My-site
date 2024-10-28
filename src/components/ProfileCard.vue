@@ -42,6 +42,7 @@
     border-radius: 50%;
     border: 10px solid #3498db; 
     object-fit: cover; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .clickable-image {
     width: 100px;
