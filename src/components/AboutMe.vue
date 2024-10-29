@@ -26,6 +26,8 @@
     align-items: center;     /* 讓內容在垂直居中 */
 }
 .textBlock {
+    height: 80%;
+    width: 80%;
     background-color: #f9f9f9; /* 文字區塊背景設置為淺灰色 */
     padding: 15px; /* 內部邊距 */
     margin-bottom: 15px; /* 區塊間距 */

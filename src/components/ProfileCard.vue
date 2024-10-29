@@ -48,7 +48,7 @@
     width: 100px;
     height: 100px;
     border-radius: 8px;        /* 圓角 */
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* 陰影 */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8); /* 陰影 */
     transition: transform 0.2s; /* 點擊時縮放效果 */
 }
 
