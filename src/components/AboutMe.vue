@@ -20,20 +20,18 @@
 .aboutMe {
     width: 100vw;           /* 設置寬度為100%的視窗寬度 */
     height: 100vh;          /* 設置高度為100%的視窗高度 */
-    background-color: #add8e6;  /* 設置淺藍色背景 (#add8e6) */
+    background-color: #add8e6;  /* 設置淺藍色背景 */
     display: flex;
     justify-content: center; /* 讓內容在水平居中 */
     align-items: center;     /* 讓內容在垂直居中 */
 }
+
 .textBlock {
-    height: 80%;
-    width: 80%;
+    height: 100%; /* 設置高度為100%，使其與 aboutMe 相同 */
+    width: 80%; 
     background-color: #f9f9f9; /* 文字區塊背景設置為淺灰色 */
-    padding: 15px; /* 內部邊距 */
-    margin-bottom: 15px; /* 區塊間距 */
-    border: 1px solid #ddd; /* 添加邊框 */
-    border-radius: 5px; /* 邊角圓滑 */
     text-align: left; /* 文字靠左對齊 */
     font-family: 'PingFang TC', 'Microsoft JhengHei', 'Heiti TC', 'Noto Sans TC', 'DFKai-SB', 'SimSun', sans-serif;
 }
+
 </style>
