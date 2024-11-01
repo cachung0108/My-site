@@ -40,4 +40,14 @@ export default {
   margin-top: 60px;
 }
 
+#home {
+  position:absolute;
+  top: 0;
+}
+
+#aboutMe {
+  position: absolute;
+  top: 100%;
+}
+
 </style>

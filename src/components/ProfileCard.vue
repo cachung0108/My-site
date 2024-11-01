@@ -24,9 +24,27 @@
 <style scoped>
 .profileCard {
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     text-align: left;
+    position: relative;
+    overflow: hidden; /* 確保偽元素不會超出範圍 */
 }
+
+.profileCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* 模糊效果 */
+    opacity: 0.5; /* 透明度，讓背景變淺 */
+    z-index: -1; /* 讓背景層位於內容下方 */
+}
+
 #contact{
     position: relative;
     left: 100px;
@@ -36,7 +54,7 @@
 #photo {
     position: relative;
     left: 100px;
-    margin-top: 30px;
+    margin-top: 100px;
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -47,7 +65,7 @@
 .clickable-image {
     width: 100px;
     height: 100px;
-    border-radius: 8px;        /* 圓角 */
+    border-radius: 30px;        /* 圓角 */
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8); /* 陰影 */
     transition: transform 0.2s; /* 點擊時縮放效果 */
 }
