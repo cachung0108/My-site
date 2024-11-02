@@ -18,13 +18,45 @@ export default {
   },
   methods: {
     scrollToSection(sectionId) {
-      // 根據 sectionId 滾動到對應的區域
       const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      } else {
+      if (!section) {
         console.error(`Section with id "${sectionId}" not found.`);
+        return;
       }
+
+      // 獲取滾動起點和終點
+      const targetPosition = section.getBoundingClientRect().top + window.scrollY;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+
+      // 設置滾動時長（毫秒）
+      const duration = 1000; // 例如，1秒
+      let startTime = null;
+
+      // 滾動動畫函數
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+
+        // 計算滾動進度
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // 平滑滾動公式（使用 easeInOutCubic 函數）
+        const ease = easeInOutCubic(progress);
+        window.scrollTo(0, startPosition + distance * ease);
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      // 平滑滾動的公式（緩入緩出效果）
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      // 啟動動畫
+      requestAnimationFrame(animation);
     }
   }
 }
