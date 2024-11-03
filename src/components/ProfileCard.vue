@@ -2,8 +2,9 @@
     <div class="profileCard">
         <img alt="Photo stickers" src="../assets/images/photo.jpg" id="photo">
         <div id = "contact">
+            <h2>Hi, I'm</h2>
             <h1>Chi-An Chung</h1>
-            <p>NCHU CSIE</p>
+            <h2>NCHU CSIE</h2>
             <div class="icon-container">
                 <a href="mailto:cachung0108@gmail.com">
                     <img src="../assets/images/gmail.png" alt="點擊圖片跳轉到網站" class="clickable-image">
@@ -49,8 +50,17 @@
     position: relative;
     left: 100px;
     display: inline-block;
-    padding: 10px; /* 可選的內距，讓內容不貼邊 */
+    padding: 30px; /* 可選的內距，讓內容不貼邊 */
 }
+
+#contact h1{
+    font-size: 400%;
+}
+
+#contact h2{
+    font-size: 200%;
+}
+
 #photo {
     position: relative;
     left: 100px;
